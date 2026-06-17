@@ -4,7 +4,7 @@ Devidasa Bites is a full-stack, real-time restaurant management SaaS and contact
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 *   **Contactless QR Ordering:** Customers scan table-specific QR codes to open a mobile-responsive menu, customize items, place orders, and track preparation status live.
 *   **Real-Time Kitchen Display System (KDS):** Interactive monitor for kitchen staff to track active orders, update preparation states (Placed ➔ Preparing ➔ Ready), and sync changes instantly.
@@ -16,7 +16,7 @@ Devidasa Bites is a full-stack, real-time restaurant management SaaS and contact
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Backend
 *   **Runtime Environment:** Node.js with Express.js
@@ -34,7 +34,7 @@ Devidasa Bites is a full-stack, real-time restaurant management SaaS and contact
 
 ---
 
-## ⚙️ Project Structure
+##  Project Structure
 
 ```text
 ├── backend/
@@ -60,7 +60,7 @@ Devidasa Bites is a full-stack, real-time restaurant management SaaS and contact
 
 ---
 
-## 🏁 Getting Started
+##  Getting Started
 
 ### Prerequisites
 *   Node.js (v16+)
@@ -109,7 +109,7 @@ Devidasa Bites is a full-stack, real-time restaurant management SaaS and contact
 
 ---
 
-## 🛠️ Seeding & Demo Access
+##  Seeding & Demo Access
 
 For easy testing, the application includes a seed route. Click **"Click here to seed default DB users & menu data"** on the Login Page, or navigate directly to `http://localhost:5000/api/seed` in your browser. This populates categories, items, and provides the following test credentials:
 
@@ -121,7 +121,7 @@ For easy testing, the application includes a seed route. Click **"Click here to 
 
 ---
 
-## 📡 WebSocket Event Schemas
+##  WebSocket Event Schemas
 
 The application uses Socket.IO rooms to isolate notification scopes:
 
