@@ -1,4 +1,4 @@
-# Devidasa Bites - Real-Time Restaurant Management SaaS Platform
+# Grand Bites - Real-Time Restaurant Management SaaS Platform
 
 Devidasa Bites is a full-stack, real-time restaurant management SaaS and contactless QR-ordering platform. Built using the MERN stack and Socket.IO, it coordinates operations between customers, waiters, kitchen staff, and admins in real time.
 
