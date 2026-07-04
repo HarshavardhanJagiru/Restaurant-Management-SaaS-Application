@@ -29,8 +29,14 @@ const ProtectedRoute = ({ children, roles }) => {
   if (!user) return <Navigate to="/login" replace />;
 
   if (roles && !roles.includes(user.role)) {
-    // Redirect kitchen staff straight to KDS; others to dashboard
-    return <Navigate to={user.role === 'kitchen_staff' ? '/kitchen' : '/dashboard'} replace />;
+    // Redirect kitchen staff straight to KDS; waiters to orders; others to dashboard
+    if (user.role === 'kitchen_staff') {
+      return <Navigate to="/kitchen" replace />;
+    } else if (user.role === 'waiter') {
+      return <Navigate to="/orders" replace />;
+    } else {
+      return <Navigate to="/dashboard" replace />;
+    }
   }
 
   return children;
@@ -54,7 +60,7 @@ const AppShell = () => {
       <Route
         path="/dashboard"
         element={
-          <ProtectedRoute roles={['admin', 'waiter']}>
+          <ProtectedRoute roles={['admin']}>
             <Dashboard />
           </ProtectedRoute>
         }
@@ -78,7 +84,7 @@ const AppShell = () => {
       <Route
         path="/billing"
         element={
-          <ProtectedRoute roles={['admin', 'waiter']}>
+          <ProtectedRoute roles={['admin']}>
             <Billing />
           </ProtectedRoute>
         }

@@ -24,6 +24,8 @@ const Login = () => {
     if (user) {
       if (user.role === 'kitchen_staff') {
         navigate('/kitchen');
+      } else if (user.role === 'waiter') {
+        navigate('/orders');
       } else {
         navigate('/dashboard');
       }
@@ -41,6 +43,8 @@ const Login = () => {
       const loggedUser = await login(email, password);
       if (loggedUser.role === 'kitchen_staff') {
         navigate('/kitchen');
+      } else if (loggedUser.role === 'waiter') {
+        navigate('/orders');
       } else {
         navigate('/dashboard');
       }

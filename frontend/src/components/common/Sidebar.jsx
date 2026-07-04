@@ -26,7 +26,7 @@ const Sidebar = () => {
       name: 'Dashboard',
       path: '/dashboard',
       icon: LayoutDashboard,
-      roles: ['admin', 'waiter'],
+      roles: ['admin'],
     },
     {
       name: 'Menu Manager',
@@ -56,7 +56,7 @@ const Sidebar = () => {
       name: 'Billing Settlement',
       path: '/billing',
       icon: FileText,
-      roles: ['admin', 'waiter'],
+      roles: ['admin'],
     },
   ];
 
