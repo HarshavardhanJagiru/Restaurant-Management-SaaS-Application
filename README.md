@@ -78,10 +78,9 @@ Devidasa Bites is a full-stack, real-time restaurant management SaaS and contact
 3.  Create a `.env` file based on `.env.example`:
     ```env
     PORT=5000
-    MONGO_URI=mongodb://127.0.0.1:27017/restaurant-saas
-    JWT_SECRET=your_super_secret_jwt_key
+    MONGO_URI=your_mongodb_URI
+    JWT_SECRET=yourjwtkey
     JWT_EXPIRE=30d
-    NODE_ENV=development
     ```
 4.  Start the development server:
     ```bash
