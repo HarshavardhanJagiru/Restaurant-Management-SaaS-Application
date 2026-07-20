@@ -14,7 +14,8 @@ export const AuthProvider = ({ children }) => {
         try {
           const { data } = await API.get('/auth/me');
           setUser(data);
-        } catch (error) {
+        }
+        catch (error) {
           console.error("Session verification failed:", error);
           localStorage.removeItem('token');
           localStorage.removeItem('user');

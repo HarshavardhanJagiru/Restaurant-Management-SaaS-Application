@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
-import { 
-  LayoutDashboard, 
-  Utensils, 
-  Table2, 
-  Receipt, 
-  ChefHat, 
-  FileText, 
-  LogOut, 
-  Activity 
+import {
+  LayoutDashboard,
+  Utensils,
+  Table2,
+  Receipt,
+  ChefHat,
+  FileText,
+  LogOut,
+  Activity
 } from 'lucide-react';
 
 const Sidebar = () => {
@@ -29,17 +29,18 @@ const Sidebar = () => {
       roles: ['admin'],
     },
     {
-      name: 'Menu Manager',
-      path: '/menu',
-      icon: Utensils,
-      roles: ['admin'],
-    },
-    {
       name: 'Table Manager',
       path: '/tables',
       icon: Table2,
       roles: ['admin', 'waiter'],
     },
+    {
+      name: 'Menu Manager',
+      path: '/menu',
+      icon: Utensils,
+      roles: ['admin'],
+    },
+
     {
       name: 'Order Manager',
       path: '/orders',
@@ -85,8 +86,8 @@ const Sidebar = () => {
               to={item.path}
               className={({ isActive }) => `
                 flex items-center gap-3.5 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 group
-                ${isActive 
-                  ? 'bg-gradient-to-r from-indigo-500/15 to-purple-500/5 text-indigo-300 border-l-4 border-indigo-500 pl-3' 
+                ${isActive
+                  ? 'bg-gradient-to-r from-indigo-500/15 to-purple-500/5 text-indigo-300 border-l-4 border-indigo-500 pl-3'
                   : 'text-slate-400 hover:bg-slate-900/40 hover:text-slate-100'}
               `}
             >
